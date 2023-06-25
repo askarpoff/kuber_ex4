@@ -48,12 +48,9 @@ spec:
           image: wbitt/network-multitool
           ports:
             - containerPort: 8080
-            - containerPort: 8443
           env:
             - name: HTTP_PORT
               value: "8080"
-            - name: HTTPS_PORT
-              value: "8443"
 ```
 2. Создать Service, который обеспечит доступ внутри кластера до контейнеров приложения из п.1 по порту 9001 — nginx 80, по 9002 — multitool 8080.
 ```yaml
@@ -64,14 +61,12 @@ metadata:
 spec:
   ports:
   - name: nginx
-    port: 10080
+    port: 9001
     targetPort: 80
   - name: multitoolhttp
-    port: 18080
+    port: 9002
     targetPort: 8080
-  - name: multitoolhttps
-    port: 18443
-    targetPort: 8443
+
 ```
 ```bash
 root@learning-k8s:~/kuber_ex4/task1# kubectl apply -f deployment.yaml
