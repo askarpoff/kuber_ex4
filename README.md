@@ -88,8 +88,9 @@ service1   ClusterIP   10.152.183.240   <none>        9001/TCP,9002/TCP   28s
 4. Продемонстрировать доступ с помощью `curl` по доменному имени сервиса.
 ![image](https://github.com/askarpoff/kuber_ex4/assets/108946489/a5776b7c-1b0e-47a3-a7a8-f529d106723f)
 6. Предоставить манифесты Deployment и Service в решении, а также скриншоты или вывод команды п.4.
-task1/deployment.yaml
-task1/service.yaml
+
+<a href=../task1/deployment.yaml>task1/deployment.yaml</a>
+<a href=../task1/service.yaml>task1/service.yaml</a>
 ------
 
 ### Задание 2. Создать Service и обеспечить доступ к приложениям снаружи кластера
