@@ -122,6 +122,7 @@ spec:
 См.выше.
 
 ###P.S.Я не очень понял, почему порта 10344 не видно в выводе netstat -tulpn?
+```bash
 root@learning-k8s:~/kuber_ex4/task2# netstat -tulpn
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
@@ -142,3 +143,4 @@ tcp        0      0 127.0.0.1:1338          0.0.0.0:*               LISTEN      
 udp        0      0 127.0.0.53:53           0.0.0.0:*                           719/systemd-resolve
 udp        0      0 10.1.1.32:68            0.0.0.0:*                           717/systemd-network
 udp        0      0 0.0.0.0:4789            0.0.0.0:*                           -
+```
