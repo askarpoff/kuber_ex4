@@ -115,6 +115,30 @@ spec:
 ![image](https://github.com/askarpoff/kuber_ex4/assets/108946489/3906570d-3a4e-4a79-a3ba-5eb6d30d22d6)
 
 3. Продемонстрировать доступ с помощью браузера или `curl` с локального компьютера.
-   
+ ![image](https://github.com/askarpoff/kuber_ex4/assets/108946489/68fec045-d32d-4563-908c-0b6e46841c55)
+  
 4. Предоставить манифест и Service в решении, а также скриншоты или вывод команды п.2.
+<a href='https://github.com/askarpoff/kuber_ex4/blob/main/task2/service.yaml'>task2/service.yaml</a>
 См.выше.
+
+###P.S.Я не очень понял, почему порта 10344 не видно в выводе netstat -tulpn?
+root@learning-k8s:~/kuber_ex4/task2# netstat -tulpn
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 127.0.0.1:10249         0.0.0.0:*               LISTEN      1253/kubelite
+tcp        0      0 127.0.0.1:10248         0.0.0.0:*               LISTEN      1253/kubelite
+tcp        0      0 127.0.0.1:10256         0.0.0.0:*               LISTEN      1253/kubelite
+tcp        0      0 0.0.0.0:16443           0.0.0.0:*               LISTEN      1253/kubelite
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      831/sshd: /usr/sbin
+tcp        0      0 127.0.0.1:19001         0.0.0.0:*               LISTEN      755/k8s-dqlite
+tcp        0      0 0.0.0.0:25000           0.0.0.0:*               LISTEN      1024/cluster-agent
+tcp        0      0 127.0.0.1:36647         0.0.0.0:*               LISTEN      750/containerd
+tcp        0      0 0.0.0.0:10250           0.0.0.0:*               LISTEN      1253/kubelite
+tcp        0      0 0.0.0.0:10259           0.0.0.0:*               LISTEN      1253/kubelite
+tcp        0      0 0.0.0.0:10257           0.0.0.0:*               LISTEN      1253/kubelite
+tcp        0      0 127.0.0.1:9099          0.0.0.0:*               LISTEN      3273/calico-node
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      719/systemd-resolve
+tcp        0      0 127.0.0.1:1338          0.0.0.0:*               LISTEN      750/containerd
+udp        0      0 127.0.0.53:53           0.0.0.0:*                           719/systemd-resolve
+udp        0      0 10.1.1.32:68            0.0.0.0:*                           717/systemd-network
+udp        0      0 0.0.0.0:4789            0.0.0.0:*                           -
