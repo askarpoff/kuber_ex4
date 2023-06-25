@@ -92,6 +92,7 @@ service1   ClusterIP   10.152.183.240   <none>        9001/TCP,9002/TCP   28s
 <a href='https://github.com/askarpoff/kuber_ex4/blob/main/task1/deployment.yaml'>task1/deployment.yaml</a>
 
 <a href='https://github.com/askarpoff/kuber_ex4/blob/main/task1/service.yaml'>task1/service.yaml</a>
+
 ------
 
 ### Задание 2. Создать Service и обеспечить доступ к приложениям снаружи кластера
