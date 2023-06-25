@@ -106,7 +106,7 @@ metadata:
 spec:
   ports:
   - name: nginx
-    port: 9001
+    port: 10080
     targetPort: 80
   type: NodePort
   selector:
@@ -115,7 +115,8 @@ spec:
 ![image](https://github.com/askarpoff/kuber_ex4/assets/108946489/3906570d-3a4e-4a79-a3ba-5eb6d30d22d6)
 
 3. Продемонстрировать доступ с помощью браузера или `curl` с локального компьютера.
- ![image](https://github.com/askarpoff/kuber_ex4/assets/108946489/68fec045-d32d-4563-908c-0b6e46841c55)
+![image](https://github.com/askarpoff/kuber_ex4/assets/108946489/d4259b56-58c7-4711-bb51-a8f4be89f4db)
+
   
 4. Предоставить манифест и Service в решении, а также скриншоты или вывод команды п.2.
 <a href='https://github.com/askarpoff/kuber_ex4/blob/main/task2/service.yaml'>task2/service.yaml</a>
