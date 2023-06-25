@@ -75,16 +75,19 @@ root@learning-k8s:~/kuber_ex4/task1# kubectl apply -f service.yaml
 service/service1 created
 root@learning-k8s:~/kuber_ex4/task1# kubectl get pods
 NAME                           READY   STATUS    RESTARTS   AGE
-deployment1-6869f698bd-q99dg   2/2     Running   0          19s
-deployment1-6869f698bd-fnxzr   2/2     Running   0          19s
-deployment1-6869f698bd-xsw4g   2/2     Running   0          19s
+deployment1-59896ddb88-p9dcq   2/2     Running   0          40s
+deployment1-59896ddb88-dwd8r   2/2     Running   0          40s
+deployment1-59896ddb88-2qmkn   2/2     Running   0          40s
 root@learning-k8s:~/kuber_ex4/task1# kubectl get services
-NAME       TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)                         AGE
-service1   ClusterIP   10.152.183.154   <none>        10080/TCP,18080/TCP,18443/TCP   20s
+NAME       TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)             AGE
+service1   ClusterIP   10.152.183.240   <none>        9001/TCP,9002/TCP   28s
 ```
 3. Создать отдельный Pod с приложением multitool и убедиться с помощью `curl`, что из пода есть доступ до приложения из п.1 по разным портам в разные контейнеры.
+![image](https://github.com/askarpoff/kuber_ex4/assets/108946489/31a8b114-ccaa-46d5-a511-965733857efa)
+
 4. Продемонстрировать доступ с помощью `curl` по доменному имени сервиса.
-5. Предоставить манифесты Deployment и Service в решении, а также скриншоты или вывод команды п.4.
+![image](https://github.com/askarpoff/kuber_ex4/assets/108946489/a5776b7c-1b0e-47a3-a7a8-f529d106723f)
+6. Предоставить манифесты Deployment и Service в решении, а также скриншоты или вывод команды п.4.
 
 ------
 
