@@ -121,7 +121,7 @@ spec:
 <a href='https://github.com/askarpoff/kuber_ex4/blob/main/task2/service.yaml'>task2/service.yaml</a>
 См.выше.
 
-### P.S.Я не понял, почему порта 10344 не видно в выводе netstat -tulpn?
+### P.S.Я не понял, почему порта 30344 не видно в выводе netstat -tulpn?
 ```bash
 root@learning-k8s:~/kuber_ex4/task2# netstat -tulpn
 Active Internet connections (only servers)
