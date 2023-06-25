@@ -112,9 +112,8 @@ spec:
   selector:
     app: deployment1
 ```
-![image](https://github.com/askarpoff/kuber_ex4/assets/108946489/3906570d-3a4e-4a79-a3ba-5eb6d30d22d6)
-
 3. Продемонстрировать доступ с помощью браузера или `curl` с локального компьютера.
+
 ![image](https://github.com/askarpoff/kuber_ex4/assets/108946489/d4259b56-58c7-4711-bb51-a8f4be89f4db)
 
   
