@@ -118,5 +118,7 @@ spec:
 
   
 3. Предоставить манифест и Service в решении, а также скриншоты или вывод команды п.2.
+
 <a href='https://github.com/askarpoff/kuber_ex4/blob/main/task2/service.yaml'>task2/service.yaml</a>
-См.выше.
+
+См. скриншот выше.
